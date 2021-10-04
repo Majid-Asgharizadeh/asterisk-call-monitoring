@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Call Monitoring</title>
+<meta http-equiv="refresh" content="5">
+
+<style>
+
+h4 {
+  text-align: center;
+  font-family: courier;
+  font-size: 100%;
+}
+#rcorners1 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 300px;
+  height: 55px;
+  margin: auto;
+  font-family: semi-bold;
+  font-size: 200%;
+  text-align: center;
+}
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 450px;
+  height: 90px;
+  margin: auto;
+  font-size: 300%;
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body style="background-color:rgb(220, 227, 225);">
+<br>
+<h1 id="rcorners1"> Call Monitoring </h1>
+<br>
+<h2 id="rcorners2">
+  <?php
+    {
+  echo shell_exec("cat getcall.txt");;
+    }
+  ?>
+</h2>
+
+<h4> The values of this page are refreshed every 5 second </h4>
